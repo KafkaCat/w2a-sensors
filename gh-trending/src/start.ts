@@ -41,7 +41,7 @@ export async function start(
       await writeCycle(store, cycle);
       ctx.reportHealth("ok");
     } catch (err) {
-      ctx.logger.error("github-trending tick failed", err);
+      ctx.logger.error("gh-trending tick failed", err);
       ctx.reportHealth("degraded", err instanceof Error ? err.message : String(err));
     }
   }
@@ -50,7 +50,7 @@ export async function start(
   timer = setInterval(tick, intervalMs);
 
   ctx.logger.info(
-    `github-trending watching ${cadence} digest, top ${top_n}` +
+    `gh-trending watching ${cadence} digest, top ${top_n}` +
       (dedupe_within_cycles > 0 ? ` (dedup window=${dedupe_within_cycles})` : ""),
   );
 

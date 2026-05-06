@@ -1,4 +1,4 @@
-# @kafkacat/sensor-github-trending
+# @kafkacat/w2a-gh-trending
 
 A [World2Agent](https://github.com/machinepulse-ai/world2agent) sensor that scrapes [github.com/trending](https://github.com/trending) on a daily or weekly cadence and emits one digest signal per cycle.
 
@@ -14,10 +14,10 @@ No GitHub authentication required — the trending page is public.
 ## Install
 
 ```bash
-npm install -g @kafkacat/sensor-github-trending
+npm install -g @kafkacat/w2a-gh-trending
 ```
 
-> Inside **Claude Code**, prefer `/world2agent:sensor-add @kafkacat/sensor-github-trending` — the plugin walks the `SETUP.md` Q&A and wires up the handler skill for you.
+> Inside **Claude Code**, prefer `/world2agent:sensor-add @kafkacat/w2a-gh-trending` — the plugin walks the `SETUP.md` Q&A and wires up the handler skill for you.
 
 ## Signals emitted
 
@@ -26,13 +26,13 @@ npm install -g @kafkacat/sensor-github-trending
 ## Run
 
 ```bash
-w2a-sensor-github-trending
+w2a-gh-trending
 ```
 
 Or with explicit configuration via env vars:
 
 ```bash
-W2A_CADENCE=daily W2A_TOP_N=5 w2a-sensor-github-trending
+W2A_CADENCE=daily W2A_TOP_N=5 w2a-gh-trending
 ```
 
 See [`SETUP.md`](./SETUP.md) for the full configuration table and handler-skill template.

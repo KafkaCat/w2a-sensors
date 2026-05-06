@@ -11,7 +11,7 @@ export async function fetchTrending(
   const res = await fetch(url, {
     headers: {
       "user-agent":
-        "Mozilla/5.0 (compatible; w2a-sensor-github-trending/0.1.0; +https://github.com/KafkaCat/w2a-sensors)",
+        "Mozilla/5.0 (compatible; w2a-gh-trending/0.1.0; +https://github.com/KafkaCat/w2a-sensors)",
       accept: "text/html,application/xhtml+xml",
     },
   });

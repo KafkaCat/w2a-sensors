@@ -3,7 +3,7 @@ import { start } from "./start.js";
 import { githubTrendingConfigSchema } from "./types.js";
 
 export default defineSensor({
-  id: "@kafkacat/sensor-github-trending",
+  id: "@kafkacat/w2a-gh-trending",
   version: "0.1.0",
   source_type: "github",
   auth: { type: "none" },

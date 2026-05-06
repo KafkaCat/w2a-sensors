@@ -2,7 +2,7 @@ import { createSignal, type W2ASignal } from "@world2agent/sdk";
 import type { TrendingRepo } from "./types.js";
 
 const SENSOR_META = {
-  id: "@kafkacat/sensor-github-trending",
+  id: "@kafkacat/w2a-gh-trending",
   version: "0.1.0",
   source_type: "github",
 } as const;

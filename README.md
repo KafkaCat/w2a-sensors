@@ -8,21 +8,21 @@ Each subdirectory is an independent npm package — its own `package.json`, its 
 
 | Package | Source | Signals | Status |
 | :-- | :-- | :-- | :-- |
-| [`@kafkacat/sensor-github-trending`](./github-trending) | [github.com/trending](https://github.com/trending) digest, daily or weekly | `repo.trending.refreshed` | `0.1.0` |
+| [`@kafkacat/w2a-gh-trending`](./gh-trending) | [github.com/trending](https://github.com/trending) digest, daily or weekly | `repo.trending.refreshed` | `0.1.0` |
 
 ## Use a sensor
 
 Inside **Claude Code**:
 
 ```
-/world2agent:sensor-add @kafkacat/sensor-github-trending
+/world2agent:sensor-add @kafkacat/w2a-gh-trending
 ```
 
 Outside Claude Code:
 
 ```bash
-npm install -g @kafkacat/sensor-github-trending
-w2a-sensor-github-trending
+npm install -g @kafkacat/w2a-gh-trending
+w2a-gh-trending
 ```
 
 Each sensor's `README.md` and `SETUP.md` cover its specific configuration.

@@ -1,5 +1,5 @@
 {
-  "name": "@kafkacat/sensor-github-trending",
+  "name": "@kafkacat/w2a-gh-trending",
   "version": "0.1.0",
   "description": "W2A sensor — periodic digest of trending repositories on GitHub (daily or weekly).",
   "keywords": [
@@ -13,11 +13,11 @@
   ],
   "license": "MIT",
   "author": "KafkaCat",
-  "homepage": "https://github.com/KafkaCat/w2a-sensors/tree/main/github-trending",
+  "homepage": "https://github.com/KafkaCat/w2a-sensors/tree/main/gh-trending",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KafkaCat/w2a-sensors.git",
-    "directory": "github-trending"
+    "directory": "gh-trending"
   },
   "bugs": {
     "url": "https://github.com/KafkaCat/w2a-sensors/issues"
@@ -35,7 +35,7 @@
     }
   },
   "bin": {
-    "w2a-sensor-github-trending": "./dist/bin.js"
+    "w2a-gh-trending": "dist/bin.js"
   },
   "scripts": {
     "start": "node dist/bin.js",

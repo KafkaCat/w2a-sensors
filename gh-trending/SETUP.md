@@ -42,7 +42,7 @@ Ask in one prompt, all defaulted:
 {
   "sensors": [
     {
-      "package": "@kafkacat/sensor-github-trending",
+      "package": "@kafkacat/w2a-gh-trending",
       "config": {
         "cadence": "weekly",
         "top_n": 10,
@@ -56,13 +56,13 @@ Ask in one prompt, all defaulted:
 
 ### 2. Write the handler skill
 
-Skill filename and frontmatter `name:` MUST be `kafkacat-sensor-github-trending` (= `packageToSkillId("@kafkacat/sensor-github-trending")`).
+Skill filename and frontmatter `name:` MUST be `kafkacat-w2a-gh-trending` (= `packageToSkillId("@kafkacat/w2a-gh-trending")`).
 
 Template:
 
 ```markdown
 ---
-name: kafkacat-sensor-github-trending
+name: kafkacat-w2a-gh-trending
 user-invocable: false
 description: Handle GitHub Trending digest signals (repo.trending.refreshed). User cares about [USER_TOPICS].
 ---
